@@ -1,0 +1,11 @@
+@model Lab9.Models.Product
+@{ ViewData["Title"] = "Product details"; }
+<h1>Product details</h1>
+<dl class="row">
+    <dt class="col-sm-3">@Html.DisplayNameFor(m => m.Name)</dt><dd class="col-sm-9">@Model.Name</dd>
+    <dt class="col-sm-3">@Html.DisplayNameFor(m => m.Description)</dt><dd class="col-sm-9">@Model.Description</dd>
+    <dt class="col-sm-3">@Html.DisplayNameFor(m => m.Price)</dt><dd class="col-sm-9">@Model.Price.ToString("C")</dd>
+    <dt class="col-sm-3">@Html.DisplayNameFor(m => m.StockQuantity)</dt><dd class="col-sm-9">@Model.StockQuantity</dd>
+</dl>
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to list</a>

@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="p-5 mb-4 rounded-3 hero-panel">
+    <div class="container-fluid py-3">
+        <h1 class="display-5 fw-bold">ASP.NET Core MVC Lab</h1>
+        <p class="col-md-9 fs-5">
+            A simple example showing how the Model, View, and Controller work together
+            to create, view, edit, and delete records with SQLite.
+        </p>
+        <a class="btn btn-primary btn-lg" asp-controller="Products" asp-action="Index">Open Products</a>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-4"><div class="card h-100"><div class="card-body"><h5>Model</h5><p>Defines the Product data and validation rules.</p></div></div></div>
+    <div class="col-md-4"><div class="card h-100"><div class="card-body"><h5>View</h5><p>Displays pages and Razor forms in the browser.</p></div></div></div>
+    <div class="col-md-4"><div class="card h-100"><div class="card-body"><h5>Controller</h5><p>Handles requests and coordinates data and views.</p></div></div></div>
+</div>
